@@ -11,7 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(to bottom right, #ffe8b2, #fff3e0); /* Degradado suave */
-    font-family: 'Lato', sans-serif; /* Fuente minimalista */
+    font-family: 'Poppins', sans-serif; /* Fuente para el cuerpo */
     color: #4A148C;
     overflow: hidden;
 }
@@ -27,13 +27,13 @@ body {
 }
 
 .message {
-    font-family: 'Playfair Display', serif; /* Fuente para el mensaje */
+    font-family: 'Dancing Script', cursive; /* Fuente para el mensaje */
     margin-top: 20px;
-    font-size: 32px; /* Tamaño de fuente más grande */
-    font-weight: 700; /* Peso de fuente más fuerte */
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco más visible */
+    font-size: 36px; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Peso de fuente más fuerte */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco más visible */
     border-radius: 15px; /* Bordes redondeados */
-    padding: 20px; /* Relleno aumentado */
+    padding: 25px; /* Relleno aumentado */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
     opacity: 0;
     transition: opacity 0.5s, transform 0.3s; /* Añadir transición de transformación */
@@ -69,4 +69,3 @@ body {
         padding: 15px; /* Ajustar el relleno */
     }
 }
-
