@@ -8,15 +8,22 @@
       }
     },
     "color": {
-      "value": "#f7ea00"
+      "value": "#ffffff,#f7ea00" /* Agrega el color blanco y amarillo */
     },
     "shape": {
       "type": "image",
-      "image": {
-        "src": "flower.png", /* Ruta de la imagen de las flores */
-        "width": 100,
-        "height": 100
-      }
+      "image": [
+        {
+          "src": "flower.png", /* Ruta de la imagen de las flores amarillas */
+          "width": 100,
+          "height": 100
+        },
+        {
+          "src": "white_flower.png", /* Ruta de la imagen de las flores blancas */
+          "width": 100,
+          "height": 100
+        }
+      ]
     },
     "opacity": {
       "value": 0.7,
@@ -62,6 +69,9 @@
       "resize": true
     }
   },
+  "retina_detect": true
+}
+
   "retina_detect": true
 }
 
