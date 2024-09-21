@@ -1,25 +1,25 @@
 {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 150,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#ffffff,#f7ea00" /* Agrega el color blanco y amarillo */
+      "value": "#ffffff,#f7ea00"
     },
     "shape": {
       "type": "image",
       "image": [
         {
-          "src": "flower.png", /* Ruta de la imagen de las flores amarillas */
+          "src": "flower.png",
           "width": 100,
           "height": 100
         },
         {
-          "src": "white_flower.png", /* Ruta de la imagen de las flores blancas */
+          "src": "white_flower.png",
           "width": 100,
           "height": 100
         }
@@ -71,7 +71,3 @@
   },
   "retina_detect": true
 }
-
-  "retina_detect": true
-}
-
