@@ -14,12 +14,12 @@
         "type": "image",
         "image": [
           {
-            "src": "images/flower.png",
+            "src": "Images/flower.png",
             "width": 100,
             "height": 100
           },
           {
-            "src": "images/white_flower.png",
+            "src": "Images/white_flower.png",
             "width": 100,
             "height": 100
           }
