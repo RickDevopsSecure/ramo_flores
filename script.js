@@ -1,17 +1,5 @@
-// Inicializar música de fondo
-document.getElementById('background-music').play();
+// script.js
 
-// Animación de aparición
-gsap.to(".message", {
-    opacity: 1,
-    duration: 1,
-    delay: 1,
-});
-
-gsap.to(".message", {
-    yoyo: true,
-    repeat: -1,
-    duration: 2,
-    y: 15,
-    ease: "sine.inOut",
-});
+// Reproducir música de fondo
+const backgroundMusic = document.getElementById('background-music');
+backgroundMusic.play();
