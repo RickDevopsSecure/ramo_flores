@@ -7,7 +7,7 @@ document.getElementById('scene').appendChild(renderer.domElement);
 
 // Cargar la textura de la flor
 const textureLoader = new THREE.TextureLoader();
-const flowerTexture = textureLoader.load('assets/flower.png', () => {
+const flowerTexture = textureLoader.load('flower.png', () => {
     createFlowers();
 });
 
