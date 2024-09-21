@@ -11,7 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(to right, #f0f4f8, #f5d9d9);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Fuente principal */
     color: #4A148C;
     overflow: hidden;
 }
@@ -27,23 +27,32 @@ body {
 }
 
 .message {
+    font-family: 'Playfair Display', serif; /* Fuente para el mensaje */
     margin-top: 20px;
-    font-size: 20px; /* Tamaño de fuente ajustado */
-    font-weight: 500;
-    background: rgba(255, 255, 255, 0.9); /* Fondo más opaco */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: 400; /* Peso de fuente normal */
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    padding: 15px; /* Aumentar el relleno */
+    padding: 20px; /* Relleno aumentado */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: opacity 0.5s;
-    white-space: pre-line; /* Permitir saltos de línea */
-    max-width: 90%; /* Ancho máximo para pantallas pequeñas */
+    white-space: pre-line;
+    max-width: 90%;
+    text-align: center; /* Centrar texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    border: 1px solid rgba(255, 215, 0, 0.5); /* Borde dorado suave */
 }
 
+.message:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 600px) {
     .message {
-        font-size: 18px; /* Tamaño de fuente más pequeño */
+        font-size: 18px; /* Tamaño de fuente más pequeño para móviles */
+        padding: 15px; /* Ajustar el relleno */
     }
 }
