@@ -33,8 +33,17 @@ body {
 }
 
 .flower-background {
-    background-image: url('flower.png'); /* Cambiado a la raíz */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('flower.png'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover; /* Asegúrate de que cubra todo el fondo */
+    opacity: 0.5; /* Ajusta la opacidad según sea necesario */
+    z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
 }
+
 
 .flower-center {
     position: absolute;
