@@ -11,22 +11,23 @@ const flowerTexture = textureLoader.load('flower.png', () => {
     createFlowers();
 });
 
-// Crear flores
+// Crear flores con un tamaño ajustado
 function createFlowers() {
-    const flowerCount = 20; // Aumentar el número de flores
+    const flowerCount = 10; // Menos flores para un aspecto más limpio
     for (let i = 0; i < flowerCount; i++) {
-        const geometry = new THREE.CircleGeometry(0.75, 32);
+        const geometry = new THREE.CircleGeometry(0.5, 32); // Tamaño reducido
         const material = new THREE.MeshBasicMaterial({ map: flowerTexture });
         const flower = new THREE.Mesh(geometry, material);
 
-        flower.position.x = Math.random() * 10 - 5;
-        flower.position.y = Math.random() * 5 - 2.5;
+        // Posición aleatoria
+        flower.position.x = Math.random() * 6 - 3;
+        flower.position.y = Math.random() * 3 - 1.5;
         flower.position.z = Math.random() * -5;
 
-        flower.scale.set(1, 1, 1);
         scene.add(flower);
     }
 }
+
 
 // Cámara
 camera.position.z = 5;
