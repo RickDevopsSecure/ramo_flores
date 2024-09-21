@@ -32,6 +32,18 @@ body {
     z-index: 1;
 }
 
+.flower-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('assets/flower.png'); /* Cambia esto por la imagen que deseas usar */
+    background-size: cover; /* Asegúrate de que cubra todo el fondo */
+    opacity: 0.2; /* Ajusta la opacidad según sea necesario */
+    z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
+}
+
 .flower-center {
     position: absolute;
     top: 50%;
@@ -109,3 +121,4 @@ body {
         width: 120px; /* Ajustar el tamaño de la imagen en móviles */
     }
 }
+
