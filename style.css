@@ -10,11 +10,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #f0f4f8, #f5d9d9);
+    background: linear-gradient(to bottom right, #ffe8b2, #fff3e0); /* Degradado suave */
     font-family: 'Roboto', sans-serif; /* Fuente principal */
     color: #4A148C;
     overflow: hidden;
 }
+
 
 .container {
     text-align: center;
