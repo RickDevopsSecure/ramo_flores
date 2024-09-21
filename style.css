@@ -1,20 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom right, #ffe8b2, #fff3e0);
-    font-family: 'Poppins', sans-serif;
-    color: #4A148C;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
     overflow: hidden;
-    padding: 10px; /* Agregar un poco de padding */
 }
 
 #particles-js {
@@ -26,101 +13,35 @@ body {
     z-index: -1;
 }
 
-
-.container {
+.text-container {
+    position: relative;
+    color: #333;
+    font-size: 24px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-in-out;
     z-index: 1;
 }
 
-.flower-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url('flower.png'); /* Asegúrate de que esta ruta sea correcta */
-    background-size: cover; /* Asegúrate de que cubra todo el fondo */
-    opacity: 0.5; /* Ajusta la opacidad según sea necesario */
-    z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
-}
-
-
-.flower-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Mantenerlo por encima de las partículas */
-}
-
-.flower-center img {
-    width: 150px; /* Ajusta el tamaño según sea necesario */
-    height: auto;
-    animation: bloom 2s ease-in-out infinite;
-}
-
-.message {
-    font-family: 'Dancing Script', cursive;
-    margin-top: 20px;
-    font-size: 36px;
-    font-weight: 600;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.5s, transform 0.3s;
-    white-space: pre-line;
-    max-width: 90%;
-    text-align: center;
-    line-height: 1.5;
-    border: 2px solid rgba(255, 215, 0, 0.7);
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
-}
-
-.description {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    color: #4A148C;
-    margin-top: 10px;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    animation-delay: 2s;
-}
-
-@keyframes bloom {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
-@keyframes fadeIn {
+@keyframes fadeInUp {
     from {
-        opacity: 0;
         transform: translateY(20px);
+        opacity: 0;
     }
     to {
-        opacity: 1;
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
 @media (max-width: 600px) {
-    .message {
-        font-size: 20px; /* Aún más pequeño en pantallas muy pequeñas */
+    .text-container {
         padding: 15px;
-    }
-
-    .description {
         font-size: 16px;
     }
-
-    .flower-center img {
-        width: 120px; /* Ajustar el tamaño de la imagen en móviles */
-    }
 }
+
 
