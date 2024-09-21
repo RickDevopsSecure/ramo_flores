@@ -11,16 +11,16 @@ const flowerTexture = textureLoader.load('assets/flower.png', createFlowers);
 
 // Crear flores
 function createFlowers() {
-    const flowerCount = 10; // Menos flores para un aspecto más limpio
+    const flowerCount = 30; // Aumentar el número de flores
     for (let i = 0; i < flowerCount; i++) {
         const geometry = new THREE.CircleGeometry(0.5, 32); // Tamaño de flores ajustado
         const material = new THREE.MeshBasicMaterial({ map: flowerTexture });
         const flower = new THREE.Mesh(geometry, material);
 
         // Posición aleatoria
-        flower.position.x = Math.random() * 6 - 3;
-        flower.position.y = Math.random() * 3 - 1.5;
-        flower.position.z = Math.random() * -5;
+        flower.position.x = Math.random() * 10 - 5; // Ampliar el rango
+        flower.position.y = Math.random() * 4 - 2; // Ampliar el rango
+        flower.position.z = Math.random() * -10; // Ampliar el rango
 
         scene.add(flower);
     }
@@ -55,5 +55,3 @@ gsap.to(".message", {
     duration: 1,
     delay: 1.5,
 });
-
-
