@@ -34,19 +34,32 @@ body {
     background: rgba(255, 255, 255, 0.95); /* Fondo más claro */
     border-radius: 10px;
     padding: 20px; /* Relleno aumentado */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s, transform 0.3s; /* Añadir transición de transformación */
     white-space: pre-line;
     max-width: 90%;
     text-align: center; /* Centrar texto */
     line-height: 1.5; /* Espaciado entre líneas */
     border: 1px solid rgba(255, 215, 0, 0.5); /* Borde dorado suave */
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); /* Sombra de relieve */
 }
 
 .message:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra al pasar el ratón */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* Sombra al pasar el ratón */
     transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Media Query para pantallas pequeñas */
