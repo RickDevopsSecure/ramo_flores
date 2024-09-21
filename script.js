@@ -49,17 +49,18 @@ const animate = () => {
 
 animate();
 
-// Animación del mensaje
-gsap.from(".message", {
+// Animación del mensaje con movimiento suave
+gsap.fromTo(".message", {
     opacity: 0,
     y: 20,
-    duration: 1,
-    delay: 1,
-    ease: "power2.out", // Suavizar la entrada
-});
-gsap.to(".message", {
+    scale: 0.8,
+}, {
     opacity: 1,
-    duration: 1,
-    delay: 1.5,
-    ease: "power2.out", // Suavizar la entrada
+    y: 0,
+    scale: 1,
+    duration: 1.5,
+    delay: 1,
+    ease: "bounce.out", // Efecto de rebote
+    repeat: -1, // Repetir indefinidamente
+    yoyo: true // Ir y volver
 });
