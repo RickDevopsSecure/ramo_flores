@@ -11,11 +11,10 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(to bottom right, #ffe8b2, #fff3e0); /* Degradado suave */
-    font-family: 'Roboto', sans-serif; /* Fuente principal */
+    font-family: 'Lato', sans-serif; /* Fuente minimalista */
     color: #4A148C;
     overflow: hidden;
 }
-
 
 .container {
     text-align: center;
@@ -32,7 +31,7 @@ body {
     margin-top: 20px;
     font-size: 24px; /* Tamaño de fuente más grande */
     font-weight: 400; /* Peso de fuente normal */
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95); /* Fondo más claro */
     border-radius: 10px;
     padding: 20px; /* Relleno aumentado */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -57,3 +56,4 @@ body {
         padding: 15px; /* Ajustar el relleno */
     }
 }
+
