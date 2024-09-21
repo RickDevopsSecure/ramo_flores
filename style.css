@@ -29,24 +29,24 @@ body {
 .message {
     font-family: 'Playfair Display', serif; /* Fuente para el mensaje */
     margin-top: 20px;
-    font-size: 24px; /* Tamaño de fuente más grande */
-    font-weight: 400; /* Peso de fuente normal */
-    background: rgba(255, 255, 255, 0.95); /* Fondo más claro */
-    border-radius: 10px;
+    font-size: 32px; /* Tamaño de fuente más grande */
+    font-weight: 700; /* Peso de fuente más fuerte */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco más visible */
+    border-radius: 15px; /* Bordes redondeados */
     padding: 20px; /* Relleno aumentado */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
     opacity: 0;
     transition: opacity 0.5s, transform 0.3s; /* Añadir transición de transformación */
     white-space: pre-line;
     max-width: 90%;
     text-align: center; /* Centrar texto */
     line-height: 1.5; /* Espaciado entre líneas */
-    border: 1px solid rgba(255, 215, 0, 0.5); /* Borde dorado suave */
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); /* Sombra de relieve */
+    border: 2px solid rgba(255, 215, 0, 0.7); /* Borde dorado más fuerte */
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Sombra de relieve */
 }
 
 .message:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* Sombra al pasar el ratón */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Sombra al pasar el ratón */
     transform: translateY(-2px); /* Efecto de elevación */
 }
 
@@ -65,7 +65,7 @@ body {
 /* Media Query para pantallas pequeñas */
 @media (max-width: 600px) {
     .message {
-        font-size: 18px; /* Tamaño de fuente más pequeño para móviles */
+        font-size: 24px; /* Tamaño de fuente más pequeño para móviles */
         padding: 15px; /* Ajustar el relleno */
     }
 }
